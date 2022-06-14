@@ -1,0 +1,2258 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Unknown Hub", "Midnight")
+
+local Tab1 = Window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Main Scripts")
+
+local Tab2 = Window:NewTab("Build A Boat")
+local Tab2Section = Tab2:NewSection("Build A Boat Script")
+
+local Tab3 = Window:NewTab("Lumber Tycoon 2")
+local Tab3Section = Tab3:NewSection("Lumber Tycoon 2 Script")
+
+local Tab4 = Window:NewTab("Area51")
+local Tab4Section = Tab4:NewSection("Area 51 Script")
+
+local Tab5 = Window:NewTab("Big Brain Simulator")
+local Tab5Section = Tab5:NewSection("BigBrainSimulator")
+
+Tab1Section:NewButton("Fly V3", "Fly V3", function()
+local main = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local up = Instance.new("TextButton")
+local down = Instance.new("TextButton")
+local onof = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local plus = Instance.new("TextButton")
+local speed = Instance.new("TextLabel")
+local mine = Instance.new("TextButton")
+local closebutton = Instance.new("TextButton")
+local mini = Instance.new("TextButton")
+local mini2 = Instance.new("TextButton")
+
+main.Name = "main"
+main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+main.ResetOnSpawn = false
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(163, 255, 137)
+Frame.BorderColor3 = Color3.fromRGB(103, 221, 213)
+Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
+Frame.Size = UDim2.new(0, 190, 0, 57)
+
+up.Name = "up"
+up.Parent = Frame
+up.BackgroundColor3 = Color3.fromRGB(79, 255, 152)
+up.Size = UDim2.new(0, 44, 0, 28)
+up.Font = Enum.Font.SourceSans
+up.Text = "UP"
+up.TextColor3 = Color3.fromRGB(0, 0, 0)
+up.TextSize = 14.000
+
+down.Name = "down"
+down.Parent = Frame
+down.BackgroundColor3 = Color3.fromRGB(215, 255, 121)
+down.Position = UDim2.new(0, 0, 0.491228074, 0)
+down.Size = UDim2.new(0, 44, 0, 28)
+down.Font = Enum.Font.SourceSans
+down.Text = "DOWN"
+down.TextColor3 = Color3.fromRGB(0, 0, 0)
+down.TextSize = 14.000
+
+onof.Name = "onof"
+onof.Parent = Frame
+onof.BackgroundColor3 = Color3.fromRGB(255, 249, 74)
+onof.Position = UDim2.new(0.702823281, 0, 0.491228074, 0)
+onof.Size = UDim2.new(0, 56, 0, 28)
+onof.Font = Enum.Font.SourceSans
+onof.Text = "fly"
+onof.TextColor3 = Color3.fromRGB(0, 0, 0)
+onof.TextSize = 14.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(242, 60, 255)
+TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Fly GUI V3"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+plus.Name = "plus"
+plus.Parent = Frame
+plus.BackgroundColor3 = Color3.fromRGB(133, 145, 255)
+plus.Position = UDim2.new(0.231578946, 0, 0, 0)
+plus.Size = UDim2.new(0, 45, 0, 28)
+plus.Font = Enum.Font.SourceSans
+plus.Text = "+"
+plus.TextColor3 = Color3.fromRGB(0, 0, 0)
+plus.TextScaled = true
+plus.TextSize = 14.000
+plus.TextWrapped = true
+
+speed.Name = "speed"
+speed.Parent = Frame
+speed.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+speed.Position = UDim2.new(0.468421042, 0, 0.491228074, 0)
+speed.Size = UDim2.new(0, 44, 0, 28)
+speed.Font = Enum.Font.SourceSans
+speed.Text = "1"
+speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextScaled = true
+speed.TextSize = 14.000
+speed.TextWrapped = true
+
+mine.Name = "mine"
+mine.Parent = Frame
+mine.BackgroundColor3 = Color3.fromRGB(123, 255, 247)
+mine.Position = UDim2.new(0.231578946, 0, 0.491228074, 0)
+mine.Size = UDim2.new(0, 45, 0, 29)
+mine.Font = Enum.Font.SourceSans
+mine.Text = "-"
+mine.TextColor3 = Color3.fromRGB(0, 0, 0)
+mine.TextScaled = true
+mine.TextSize = 14.000
+mine.TextWrapped = true
+
+closebutton.Name = "Close"
+closebutton.Parent = main.Frame
+closebutton.BackgroundColor3 = Color3.fromRGB(225, 25, 0)
+closebutton.Font = "SourceSans"
+closebutton.Size = UDim2.new(0, 45, 0, 28)
+closebutton.Text = "X"
+closebutton.TextSize = 30
+closebutton.Position =  UDim2.new(0, 0, -1, 27)
+
+mini.Name = "minimize"
+mini.Parent = main.Frame
+mini.BackgroundColor3 = Color3.fromRGB(192, 150, 230)
+mini.Font = "SourceSans"
+mini.Size = UDim2.new(0, 45, 0, 28)
+mini.Text = "-"
+mini.TextSize = 40
+mini.Position = UDim2.new(0, 44, -1, 27)
+
+mini2.Name = "minimize2"
+mini2.Parent = main.Frame
+mini2.BackgroundColor3 = Color3.fromRGB(192, 150, 230)
+mini2.Font = "SourceSans"
+mini2.Size = UDim2.new(0, 45, 0, 28)
+mini2.Text = "+"
+mini2.TextSize = 40
+mini2.Position = UDim2.new(0, 44, -1, 57)
+mini2.Visible = false
+
+speeds = 1
+
+local speaker = game:GetService("Players").LocalPlayer
+
+local chr = game.Players.LocalPlayer.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+
+nowe = false
+
+Frame.Active = true -- main = gui
+Frame.Draggable = true
+
+onof.MouseButton1Down:connect(function()
+
+	if nowe == true then
+		nowe = false
+
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,true)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,true)
+		speaker.Character.Humanoid:ChangeState(Enum.HumanoidStateType.RunningNoPhysics)
+	else 
+		nowe = true
+
+
+
+		for i = 1, speeds do
+			spawn(function()
+
+				local hb = game:GetService("RunService").Heartbeat	
+
+
+				tpwalking = true
+				local chr = game.Players.LocalPlayer.Character
+				local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+				while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+					if hum.MoveDirection.Magnitude > 0 then
+						chr:TranslateBy(hum.MoveDirection)
+					end
+				end
+
+			end)
+		end
+		game.Players.LocalPlayer.Character.Animate.Disabled = true
+		local Char = game.Players.LocalPlayer.Character
+		local Hum = Char:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+
+		for i,v in next, Hum:GetPlayingAnimationTracks() do
+			v:AdjustSpeed(0)
+		end
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Flying,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.GettingUp,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Landed,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Running,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,false)
+		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming,false)
+		speaker.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+	end
+
+
+
+
+	if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").RigType == Enum.HumanoidRigType.R6 then
+
+
+
+		local plr = game.Players.LocalPlayer
+		local torso = plr.Character.Torso
+		local flying = true
+		local deb = true
+		local ctrl = {f = 0, b = 0, l = 0, r = 0}
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		local maxspeed = 50
+		local speed = 0
+
+
+		local bg = Instance.new("BodyGyro", torso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = torso.CFrame
+		local bv = Instance.new("BodyVelocity", torso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		if nowe == true then
+			plr.Character.Humanoid.PlatformStand = true
+		end
+		while nowe == true or game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 do
+			game:GetService("RunService").RenderStepped:Wait()
+
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0,0)
+			end
+			--	game.Players.LocalPlayer.Character.Animate.Disabled = true
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		end
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+		plr.Character.Humanoid.PlatformStand = false
+		game.Players.LocalPlayer.Character.Animate.Disabled = false
+		tpwalking = false
+
+
+
+
+	else
+		local plr = game.Players.LocalPlayer
+		local UpperTorso = plr.Character.UpperTorso
+		local flying = true
+		local deb = true
+		local ctrl = {f = 0, b = 0, l = 0, r = 0}
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		local maxspeed = 50
+		local speed = 0
+
+
+		local bg = Instance.new("BodyGyro", UpperTorso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = UpperTorso.CFrame
+		local bv = Instance.new("BodyVelocity", UpperTorso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		if nowe == true then
+			plr.Character.Humanoid.PlatformStand = true
+		end
+		while nowe == true or game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 0 do
+			wait()
+
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0,0)
+			end
+
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		end
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bv:Destroy()
+		plr.Character.Humanoid.PlatformStand = false
+		game.Players.LocalPlayer.Character.Animate.Disabled = false
+		tpwalking = false
+
+
+
+	end
+
+
+
+
+
+end)
+
+local tis
+
+up.MouseButton1Down:connect(function()
+	tis = up.MouseEnter:connect(function()
+		while tis do
+			wait()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,0)
+		end
+	end)
+end)
+
+up.MouseLeave:connect(function()
+	if tis then
+		tis:Disconnect()
+		tis = nil
+	end
+end)
+
+local dis
+
+down.MouseButton1Down:connect(function()
+	dis = down.MouseEnter:connect(function()
+		while dis do
+			wait()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1,0)
+		end
+	end)
+end)
+
+down.MouseLeave:connect(function()
+	if dis then
+		dis:Disconnect()
+		dis = nil
+	end
+end)
+
+
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(char)
+	wait(0.7)
+	game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+	game.Players.LocalPlayer.Character.Animate.Disabled = false
+
+end)
+
+
+plus.MouseButton1Down:connect(function()
+	speeds = speeds + 1
+	speed.Text = speeds
+	if nowe == true then
+
+
+		tpwalking = false
+		for i = 1, speeds do
+			spawn(function()
+
+				local hb = game:GetService("RunService").Heartbeat	
+
+
+				tpwalking = true
+				local chr = game.Players.LocalPlayer.Character
+				local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+				while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+					if hum.MoveDirection.Magnitude > 0 then
+						chr:TranslateBy(hum.MoveDirection)
+					end
+				end
+
+			end)
+		end
+	end
+end)
+mine.MouseButton1Down:connect(function()
+	if speeds == 1 then
+		speed.Text = 'cannot be less than 1'
+		wait(1)
+		speed.Text = speeds
+	else
+		speeds = speeds - 1
+		speed.Text = speeds
+		if nowe == true then
+			tpwalking = false
+			for i = 1, speeds do
+				spawn(function()
+
+					local hb = game:GetService("RunService").Heartbeat	
+
+
+					tpwalking = true
+					local chr = game.Players.LocalPlayer.Character
+					local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+					while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+						if hum.MoveDirection.Magnitude > 0 then
+							chr:TranslateBy(hum.MoveDirection)
+						end
+					end
+
+				end)
+			end
+		end
+	end
+end)
+
+closebutton.MouseButton1Click:Connect(function()
+	main:Destroy()
+end)
+
+mini.MouseButton1Click:Connect(function()
+	up.Visible = false
+	down.Visible = false
+	onof.Visible = false
+	plus.Visible = false
+	speed.Visible = false
+	mine.Visible = false
+	mini.Visible = false
+	mini2.Visible = true
+	main.Frame.BackgroundTransparency = 1
+	closebutton.Position =  UDim2.new(0, 0, -1, 57)
+end)
+
+mini2.MouseButton1Click:Connect(function()
+	up.Visible = true
+	down.Visible = true
+	onof.Visible = true
+	plus.Visible = true
+	speed.Visible = true
+	mine.Visible = true
+	mini.Visible = true
+	mini2.Visible = false
+	main.Frame.BackgroundTransparency = 0 
+	closebutton.Position =  UDim2.new(0, 0, -1, 27)
+end)
+end)
+
+Tab1Section:NewToggle("Inf Jumps", "Give Inf Jumps", function(state)
+    if state then
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    else
+local InfiniteJumpEnabled = false
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    end
+end)
+
+Tab1Section:NewButton("Teleport Tool", ".", function()
+    mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Tab1Section:NewButton("Wall Walking", ".", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+Tab1Section:NewButton("Full Brightness", ".", function()
+game:GetService("Lighting").Brightness = 2
+game:GetService("Lighting").ClockTime = 14
+game:GetService("Lighting").FogEnd = 100000
+game:GetService("Lighting").GlobalShadows = false
+game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
+
+Tab1Section:NewToggle("Auto Jump", "Auto Jumps", function(state)
+    if state then
+while true do wait(0.7)
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping") end
+    else
+game.Players.LocalPlayer.Character:Destroy()
+    end
+end)
+
+local Tab1Section = Tab1:NewSection("Other")
+
+Tab1Section:NewButton("Keyboard script", "Gives you a keyboard gui", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
+
+Tab1Section:NewButton("Chat Translator", "yes", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Language-translator-/main/Language%20translator", true))()
+end)
+
+Tab1Section:NewButton("Annoying", ".", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
+end)
+
+Tab1Section:NewButton("Chat Hax", ".", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/UFLyh2Tt'))();
+end)
+
+Tab1Section:NewButton("LagSwitcher", ".", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/HnZ0V3cV'))();
+end)
+
+Tab1Section:NewToggle("Fake Lag", "Fake Lag", function(state)
+    if state then
+getgenv().autokill = true
+ 
+if getgenv().autokill then
+task.spawn(function()
+while getgenv().autokill do
+for I, V in pairs(game.Players:GetChildren()) do
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
+
+HumanoidRootPart.Anchored = true
+wait(0.2)
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
+
+HumanoidRootPart.Anchored = false
+wait()
+end
+end
+end)
+end
+    else
+game.Players.LocalPlayer.Character:Destroy()
+    end
+end)
+
+Tab2Section:NewButton("White Team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-42, -9, -614)
+end)
+
+Tab2Section:NewButton("Black Team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-576, -9, -122)
+end)
+
+Tab2Section:NewButton("Red Team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(479, -9, -54)
+end)
+
+Tab2Section:NewButton("Green team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-596, -9, 302)
+end)
+
+Tab2Section:NewButton("Blue Team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(474, -9, 293)
+end)
+
+Tab2Section:NewButton("Magenta Team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(469, -9, 617)
+end)
+
+Tab2Section:NewButton("Yellow Team", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-586, -9, 652)
+end)
+
+local Tab2Section = Tab2:NewSection("Other")
+
+Tab2Section:NewButton("Teleport to Library", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(180, -11, 1159)
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(240, -11, 1156)
+end)
+
+Tab2Section:NewButton("Library Password Books", ".", function()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Books Password",
+    Text = "Yello,Red,Pink,Cyan,LightGreen",
+    Duration = 10,
+})
+
+end)
+
+Tab2Section:NewButton("Teleport to End", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-55, -360, 9478)
+end)
+
+Tab2Section:NewButton("Auto Farm", ".", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/nucy5Uw8'))();
+end)
+    
+
+
+Tab3Section:NewButton("Dupe Axe", ".", function()
+local plr = game:service'Players'.LocalPlayer
+
+function SafeRespawn()
+    plr.Character.Head:Destroy()
+end
+
+function Dupe()
+    SafeRespawn()
+    for i,v in pairs(plr.Backpack:GetChildren()) do
+        if v.Name == "Tool" then
+            game:GetService("ReplicatedStorage").Interaction.ClientInteracted:FireServer(v,"Drop tool",plr.Character.Torso.CFrame * CFrame.new(0,5,0))
+        end
+    end
+end
+Dupe()
+end)
+
+Tab3Section:NewButton("Dupe Money", ".", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Duy5Lqyk'))();
+end)
+
+Tab3Section:NewButton("Free Land", ".", function()
+    for a,b in pairs(workspace.Properties:GetChildren()) do 
+    if b:FindFirstChild("Owner") and b:FindFirstChild("OriginSquare") and b.Owner.Value == nil then 
+        game.ReplicatedStorage.PropertyPurchasing.ClientPurchasedProperty:FireServer(b, b.OriginSquare.OriginCFrame.Value.p + Vector3.new(0,3,0))
+ wait(0.5)
+        Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
+	for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+		if v.Owner.Value == game.Players.LocalPlayer then
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+		end
+	end
+    end
+end
+end)
+
+Tab3Section:NewButton("Max Land", ".", function()
+    for i, v in pairs(game:GetService("Workspace").Properties:GetChildren()) do
+        if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
+            base = v
+            square = v.OriginSquare
+            end
+        end
+    function makebase(pos)
+        local Event = game:GetService("ReplicatedStorage").PropertyPurchasing.ClientExpandedProperty
+        Event:FireServer(base, pos)
+        end
+    local spos = square.Position
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X, spos.Y, spos.Z - 80))
+--Corners--
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 80))
+
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z + 80))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X + 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z + 40))
+    makebase(CFrame.new(spos.X - 80, spos.Y, spos.Z - 40))
+    makebase(CFrame.new(spos.X + 40, spos.Y, spos.Z - 80))
+    makebase(CFrame.new(spos.X - 40, spos.Y, spos.Z - 80))
+end)
+
+local Tab3Section = Tab3:NewSection("Teleport to Places")
+
+Tab3Section:NewButton("Spawn", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(153, 3, 61)
+end)
+
+Tab3Section:NewButton("Volcano", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1567, 623, 1085)
+end)
+
+Tab3Section:NewButton("Cave", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(3573, -181, 431)
+end)
+
+Tab3Section:NewButton("Links Logic", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4607, 7, -798)
+end)
+
+Tab3Section:NewButton("Fancy Furnishings", ".", function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(491, 3, -1720)
+end)
+
+Tab3Section:NewButton("Swamp", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1209, 132, -801)
+end)
+
+Tab3Section:NewButton("Palm Island", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(2549, -6, -42)
+end)
+
+Tab3Section:NewButton("Bobs Shack", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(237, 8, -2538)
+end)
+
+Tab3Section:NewButton("Shrine Of Sight", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-1605, 195, 926)
+end)
+
+Tab3Section:NewButton("Boxed Cars", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(509, 3, -1463)
+end)
+
+Tab3Section:NewButton("Dock", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1134, -1, -206)
+end)
+
+Tab3Section:NewButton("Bridge", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(113, 11, -977)
+end)
+
+Tab3Section:NewButton("Fine Arts Shop", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(5212, -166, 720)
+end)
+
+Tab3Section:NewButton("Strange Man", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1068, 17, 1138)
+end)
+
+Tab3Section:NewButton("End Times", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(113, -213, -951)
+end)
+
+Tab3Section:NewButton("Snow Island", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1445, 412, 3202)
+end)
+
+Tab3Section:NewButton("Plot", "No Info", function()
+local Base
+for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+if v.Owner.Value == game.Players.LocalPlayer then
+Base = v.OriginSquare.CFrame + Vector3.new(0,5,0)
+end
+end
+end)
+
+Tab4Section:NewButton("Guns [Not All Guns]", "Get Gun", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(183, 305, 184)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(136, 334, 501)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(115, 324, 676)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(320, 272, 140)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(3, 268, 187)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-104, 313, 461)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-155, 303, 768)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(233, 373, 49)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(148, 260, 326)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(157, 344, 607)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-147, 313, 281)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(376.834228515625, 323.9018249511719, 651.5572509765625)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(157.37255859375, 343.9002685546875, 607.1287231445312)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(319.8853454589844, 272.09429931640625, 142.25144958496094)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(114.54259490966797, 323.6999206542969, 675.5841674804688)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(70.29669952392578, 281.900146484375, 30.506235122680664)
+wait(3)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(114.55607604980469, 335.8998718261719, 571.3048706054688)
+wait(2)
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(326, 511, 392)
+end)
+
+
+Tab4Section:NewButton("Get All Papers", ".", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/bSjUfFZS'))()
+end)
+
+Tab4Section:NewButton("Remove Fog", ".", function ()
+    for i,v in pairs(game.Lighting:GetChildren()) do
+			if v:IsA("Script") == false and v:IsA("LocalScript") == false then
+				v:remove()
+		end
+	end
+while true and wait() do
+game.Lighting.FogEnd = math.huge
+		game.Lighting.FogStart = 0
+		
+		game.Lighting.ClockTime=12
+	game.Lighting.Brightness = 2
+		game.Lighting.Ambient = Color3.fromRGB(167, 167, 167)
+		game.Lighting.OutdoorAmbient = Color3.fromRGB(167, 167, 167)
+end
+end)
+
+Tab4Section:NewButton("Under Ground", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(282.93243408203125, 259.6999206542969, 368.8319091796875)
+end)
+
+Tab4Section:NewButton("Sewer", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(64.22872924804688, 271.7001647949219, 204.7895965576172)
+end)
+
+Tab4Section:NewButton("Execution room ", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(31.588851928710938, 313.500244140625, 203.12042236328125)
+end)
+
+Tab4Section:NewButton("Execution Room Outside", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(37.53633499145508, 313.4998779296875, 203.3778533935547)
+end)
+
+Tab5Section:NewButton("Teleport to Sell", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-55, 3, -46)
+end)
+
+Tab5Section:NewButton("Unlock all Gamepasses", ".", function()
+game:GetService("Players").LocalPlayer.Gamepasses["2xCoins"].Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.Running.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.FastReading.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.Balloon.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.DoubleJump.Value = true
+game:GetService("Players").LocalPlayer.Gamepasses.InfiniteBrainCapacity.Value = true
+end)
+
+Tab5Section:NewButton("Unlock All Portals", ".", function()
+game:GetService("Players")["LocalPlayer"].Portals.PeacefulFields.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.SnowySnow.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.Dunes.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.FloatingRock.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.SpaceBubble.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.Mars.Value = true
+game:GetService("Players")["LocalPlayer"].Portals.Moon.Value = true
+end)
+
+local Tab5Section = Tab5:NewSection("Teleport Places")
+
+Tab5Section:NewButton("Mars", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-17, 76667, 162)
+end)
+
+Tab5Section:NewButton("Moon", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-15, 52667, 186)
+end)
+
+Tab5Section:NewButton("Space Bubble", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-16, 34716, 93)
+end)
+
+Tab5Section:NewButton("Floating Rock", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-16, 17881, 94)
+end)
+
+Tab5Section:NewButton("Dunes", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-16, 8313, 93)
+end)
+
+Tab5Section:NewButton("Snowy Snow", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-29, 3503, 96)
+end)
+
+Tab5Section:NewButton("Peaceful Fields", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-28, 1022, 94)
+end)
+
+local Tab6 = Window:NewTab("Natural Disaster")
+local Tab6Section = Tab6:NewSection("Natural Disaster")
+
+Tab6Section:NewToggle("Balloon Mode", ".", function(state)
+    if state then
+    workspace.Gravity = 60
+    else
+    workspace.Gravity = 200
+    end
+end)
+
+
+Tab6Section:NewButton("Teleport to Game", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-125, 48, 10)
+end)
+
+Tab6Section:NewButton("Teleport to Lobby", ".", function()
+game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-245, 180, 325)
+end)
+
+Tab6Section:NewButton("No Fall Damage", ".", function()
+game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+
+Tab6Section:NewButton("Get Ballon", ".", function()
+if game.Workspace:FindFirstChild("GreenBalloon", true) then -- Check for stealable GreenBalloon 
+	balloonClone = game.Workspace:FindFirstChild("GreenBalloon", true):Clone() -- clone it 
+	balloonClone.Parent = game:GetService("Players").LocalPlayer.Backpack
+end
+end)
+
+local Tab7 = Window:NewTab("Madcity")
+local Tab7Section = Tab7:NewSection("Madcity")
+
+Tab7Section:NewButton("Auto Rob Bank", "Auto Robs the selected item if open", function()
+		if game.ReplicatedStorage.HeistStatus.Bank.Robbing.Value then
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to Rob Bank";Icon = "";Duration = 10;})
+			--Tab7Section:UpdateSection("Status: Resetting to rob bank")
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Robbing Bank";Icon = "";Duration = 10;})
+			--Tab7Section:UpdateSection("Status: Robbing bank")
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do 
+				if v:IsA("Accessory") or v:IsA("BillboardGui") or v:IsA("Decal") or v:IsA("Shirt") or v:IsA("Pants") then 
+					v:Destroy()
+				end
+			end
+			local New_CFrame = CFrame.new(723.64, 109.76, 536.81) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Waiting for bag to fill";Icon = "";Duration = 30;})
+			--Tab7Section:UpdateSection("Status: Waiting for bag to fill")
+			wait(29)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Teleporting to Criminal Base";Icon = "";Duration = 10;})
+			--Tab7Section:UpdateSection("Status: Teleporting to Criminal Base")
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			wait(0.9)
+			local New_CFrame = CFrame.new(2139.42,26.5,425.82) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+
+			wait(6)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting for fix";Icon = "";Duration = 10;})
+			--Tab7Section:UpdateSection("Status: Resetting for fix")
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done robbing bank";Icon = "";Duration = 5;})
+			--Tab7Section:UpdateSection("Status: Done robbing bank")
+			--wait(1.5)
+			--Tab7Section:UpdateSection("Status: Click to Rob") --Tab7Section:UpdateSection("Status: ") -- for copy :)
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Bank is not open!";Icon = "";Duration = 5;})
+			--Tab7Section:UpdateSection("Status: Bank is not open!")
+			--wait(1.5)
+			--Tab7Section:UpdateSection("Status: Click to Rob") --Tab7Section:UpdateSection("Status: ") -- for copy :)
+		end      
+	end)
+
+	Tab7Section:NewButton("Auto Rob Casino", "Auto Robs the selected item if open", function()
+		if game.ReplicatedStorage.HeistStatus.Casino.Robbing.Value then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Robbing Casino";Icon = "";Duration = 7;})
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1685.34,41.56,514.75)
+			wait(1)
+			function robtrayy()
+				game.Workspace.ObjectSelection.Trayy.Trayy.Trayy.Event:FireServer()
+				wait(0.001)
+				game.Workspace.ObjectSelection.Trayy.Name = "TrayyOpened"
+				wait(0.001)
+			end
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "1st Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "2nd Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "3th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "4th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "5th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "6th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "7th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "8th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "9th Trayy Robbed";Icon = "";Duration = 7;})
+			robtrayy() -- last trayy
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Last Trayy Robbed";Icon = "";Duration = 7;})
+			wait(1.4714)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Waiting to bypass kick";Icon = "";Duration = 16;})
+			wait(14)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1595.55,36.56,739.93)
+			wait(1)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Teleporting to criminal base!";Icon = "";Duration = 5;})
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2139.42,26.42,425.9212)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting for fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done Robbing Casino";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Casino is closed :c";Icon = "";Duration = 7;})
+		end
+	end)
+
+	Tab7Section:NewButton("Auto Rob Club", "Auto Robs the selected item if open", function()
+		if game.ReplicatedStorage.HeistStatus.Club.Robbing.Value then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			
+			function robdiamond()
+				game.Workspace.ObjectSelection.ClubDiamond.ClubDiamond.ClubDiamond.Event:FireServer()
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamond.Name = "ClubDiamondOff"
+				wait(0.001)
+			end
+			
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Robbing Club";Icon = "";Duration = 7;})
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1141.09,172.71,5.17)
+			wait(0.01)
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "1st diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "2nd diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "3th diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "4th diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "5th diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "6th diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "7th diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "8th diamond robbed";Icon = "";Duration = 7;})
+			wait(0.1)
+			
+			function debug()
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+			end
+			
+			debug()
+			
+			wait(0.1)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Waiting 5 seconds to bypass erorr...";Icon = "";Duration = 7;})
+			wait(5)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Robbing the rest";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "9th diamond robbed";Icon = "";Duration = 7;})
+			robdiamond()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Last diamond robbed";Icon = "";Duration = 7;})
+			wait(0.001)
+			
+			function lastdebug()
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+				game.Workspace.ObjectSelection.ClubDiamondOff.Name = "ClubDiamond"
+				wait(0.001)
+			end
+			
+			lastdebug()
+			
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Waiting to bypass kick";Icon = "";Duration = 16;})
+			wait(14)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1102.92,54.15,160.71)
+			wait(1)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Teleporting to criminal base";Icon = "";Duration = 7;})
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2139.42,26.42,425.9212)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done Robbing Club";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Club is closed!";Icon = "";Duration = 7;})
+		end
+	end)
+
+	Tab7Section:NewButton("Auto Rob Pyramid", "Auto Robs the selected item if open", function()
+		if game.ReplicatedStorage.HeistStatus.Pyramid.Robbing.Value then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			
+			function robtreasure()
+				game.Workspace.ObjectSelection.TreasurePyramid.TreasurePyramid.TreasurePyramid.Event:FireServer()
+				wait(0.001)
+				game.Workspace.ObjectSelection.TreasurePyramid.Name = "PyramidOpened"
+				wait(0.001)
+			end
+			
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Robbing Pyramid";Icon = "";Duration = 7;})
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1006,51069.50,601.98)
+			wait(1)
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "1st Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "2nd Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "3rd Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "4th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "5th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "6th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "7th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "8th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "9th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "10th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "11th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "12th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "13th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "14th Treasure Robbed";Icon = "";Duration = 7;})
+			robtreasure()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Last Treasure Robbed";Icon = "";Duration = 7;})
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Waiting to bypass kick";Icon = "";Duration = 16;})
+			wait(14)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-1047.64,18.82,-514.79)
+			wait(1)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Teleporting to criminal base";Icon = "";Duration = 7;})
+			wait(1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2139.42,26.42,425.9212)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting for fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done Robbing Pyramid";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Pyramid is closed!";Icon = "";Duration = 7;})
+		end
+	end)
+
+	Tab7Section:NewButton("Auto Rob Ship", "Autorobs Ship if its There", function()
+        local New_CFrame = CFrame.new(2509.57, 81.55, 339.8) --The Cord where you want to go
+
+        local ts = game:GetService('TweenService')
+        local char = game.Players.LocalPlayer.Character
+
+        local part = char.HumanoidRootPart
+        local ti = TweenInfo.new(4, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+        local tp = {CFrame = New_CFrame}
+        ts:Create(part, ti, tp):Play()
+        wait(24)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2139.42,26.5,425.82)
+    end)
+	
+	Tab7Section:NewButton("Auto Rob Jewelry (BETA)", "Expect Some Bugs", function()
+		if game.ReplicatedStorage.HeistStatus.Jewel.Robbing.Value then
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Jewelry Auto Rob is in beta, Expect some bugs ;)";Icon = "";Duration = 7;})
+			wait(3)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-90.81,26.35,806.56)
+			wait(0.2)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Robbing please wait...";Icon = "";Duration = 30;})
+			--Tab7Section:UpdateSection("Status: Robbing please wait...")
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-84.17,26.35,809.56)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-73.54,26.66,821.26)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-58.26,26.35,822.31)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-54.92,26.35,823.62)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-97.04,26.35,833.05)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-102.62,26.35,832.26)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-101.24,26.35,828.24)
+			wait(0.1)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-94.64,26.66,816.2)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-93.14,26.66,807.02)
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.5)
+			mouse1click()
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-95.76,29.73,862.77)
+			wait(1)
+			
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Taking diamond";Icon = "";Duration = 9;})
+			keypress(0x45)
+			wait(8.35872) -- literally the exact wait time in the game
+			keyrelease(0x45)
+			wait(0.1)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Teleporting to criminal base";Icon = "";Duration = 7;})
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(2139.42,26.42,425.82)
+			wait(0.1)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting for Fix...";Icon = "";Duration = 7;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done Robbing Jewelry";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Jewelry is Closed!";Icon = "";Duration = 7;})
+		end
+	end)
+
+	Tab7Section:NewButton("Auto Rob All (NO WAY BACK AFTER CLICKED)", "Executes Auto Rob (NO WAY BACK)", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Auto Rob Enabled, No way back now";Icon = "";Duration = 10;})
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Only way to get back is leaving the game!";Icon = "";Duration = 10;})
+		loadstring(game:HttpGet('https://www.system-exodus.com/scripts/madcity/MadLadsAR.lua'))()
+	end)
+
+	Tab7Section:NewButton("Open Bank", "Opens the bank for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Opening Bank";Icon = "";Duration = 7;})
+		if game.ReplicatedStorage.HeistStatus.Bank.Robbing.Value == false then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(708.68, 109.59, 543.86)
+			wait(0.2)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(708.68, 110.99, 543.86)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Bank is already being robbed! Just auto rob bank";Icon = "";Duration = 10;})
+		end
+	end)
+
+	Tab7Section:NewButton("Open Club", "Opens the club for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Opening Club...";Icon = "";Duration = 7;})
+		if game.ReplicatedStorage.HeistStatus.Club.Robbing.Value == false then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(1176.25,72.71,-21.92)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Club is already being robbed! Just auto rob club";Icon = "";Duration = 10;})
+		end
+	end)
+
+	Tab7Section:NewButton("Open Jewelry", "Opens the Jewelry for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Opening Jewelry...";Icon = "";Duration = 7;})
+		if game.ReplicatedStorage.HeistStatus.Jewel.Robbing.Value == false then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+			for i,v in pairs(getnilinstances()) do
+				if v.Name == "HumanoidRootPart" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Vector3.new(-80.58,86.56,805.89)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 7;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Jewelry is already being robbed! Just auto rob jewelry";Icon = "";Duration = 10;})
+		end
+	end)
+
+	Tab7Section:NewButton("Open Pyramid", "Opens the Pyramid for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Opening Pyramid...";Icon = "";Duration = 7;})
+		if game.ReplicatedStorage.HeistStatus.Pyramid.Locked.Value == false and game.ReplicatedStorage.HeistStatus.Pyramid.Robbing.Value == false then
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to open pyramid";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Opening Pyramid...";Icon = "";Duration = 7;})
+			local _speed=1000
+			function tp(...)
+				local plr=game.Players.LocalPlayer
+				local args={...}
+				if typeof(args[1])=="number"and args[2]and args[3]then
+					args=Vector3.new(args[1],args[2],args[3])
+				elseif typeof(args[1])=="Vector3" then
+					args=args[1]    
+				elseif typeof(args[1])=="CFrame" then
+					args=args[1].Position
+				end
+				local dist=(plr.Character.HumanoidRootPart.Position-args).Magnitude
+				game:GetService("TweenService"):Create(
+				plr.Character.HumanoidRootPart,
+				TweenInfo.new(dist/_speed,Enum.EasingStyle.Linear),
+				{CFrame=CFrame.new(args)}
+				):Play()
+			end
+
+			tp(-1043.37, 17.94, -483.57)
+			wait(5.18)
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 9;})
+		else
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Pyramid is already being robbed! Just auto rob pyramid";Icon = "";Duration = 10;})
+		end
+	end)
+
+	Tab7Section:NewButton("Hack Club Vault", "Hacks the club vault for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Hacking Club Vault... Please wait";Icon = "";Duration = 7;})
+		wait(1.718)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+		for i,v in pairs(getnilinstances()) do
+			if v.Name == "HumanoidRootPart" then
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+			wait(0.1)
+			game.Workspace.ObjectSelection.HackKeyPad.HackKeyPad.HackKeyPad.Event:FireServer()
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Succesfully Hacked Club Vault!";Icon = "";Duration = 7;})
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 5;})
+	end)
+
+	Tab7Section:NewButton("Pull all Casino Levers", "Pulls the Casino Levers for you", function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+		for i,v in pairs(getnilinstances()) do
+			if v.Name == "HumanoidRootPart" then
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+		game.Workspace.ObjectSelection.Lever1.Lever.Lever.Event:FireServer()
+		game.Workspace.ObjectSelection.Lever2.Lever.Lever.Event:FireServer()
+		game.Workspace.ObjectSelection.Lever3.Lever.Lever.Event:FireServer()
+		game.Workspace.ObjectSelection.Lever4.Lever.Lever.Event:FireServer()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "All Casino Levers Pulled!";Icon = "";Duration = 7;})
+		wait(1.718)
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		wait(8)
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 7;})
+	end)
+
+	Tab7Section:NewButton("Hack Casino Computers", "Hacks the casino computer for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Executing FireServer... Please Wait";Icon = "";Duration = 7;})
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+		for i,v in pairs(getnilinstances()) do
+			if v.Name == "HumanoidRootPart" then
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+		if game.ReplicatedStorage.HeistStatus.Casino.Locked.Value == false and game.ReplicatedStorage.HeistStatus.Casino.Robbing.Value == false then
+			game.Workspace.ObjectSelection.HackComputer.HackComputer.HackComputer.Event:FireServer()
+			wait(1.718)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Resetting to fix";Icon = "";Duration = 9;})
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done";Icon = "";Duration = 7;})
+
+		else
+			Statuss.Text = "Status: Error while Executing FireServer: Casino is already Opened or is being Robbed!"
+			wait(1.718)
+			Statuss.Text = "Status: Resetting for Fix..."
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			wait(8)
+			Statuss.Text = "Status: Waiting..."
+
+		end
+	end)
+	
+	Tab7Section:NewButton("Pistol", "Gets the Pistol for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Please Wait...";Icon = "";Duration = 7;})
+		local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		if game.Players.LocalPlayer.Team.Name == "Criminals" or game.Players.LocalPlayer.Team.Name == "Prisoners" then
+			local New_CFrame = CFrame.new(2149.65, 26.5, 417.38) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		else
+			local New_CFrame = CFrame.new(-1646.52, 43.53, 729.32) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		end
+	end)
+	
+	Tab7Section:NewButton("AK47", "Gets the AK47 for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Please Wait...";Icon = "";Duration = 7;})
+		local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		if game.Players.LocalPlayer.Team.Name == "Criminals" or game.Players.LocalPlayer.Team.Name == "Prisoners" then
+			local New_CFrame = CFrame.new(2152.37, 28.56, 429.59) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		else
+			local New_CFrame = CFrame.new(-1645.94, 43.78, 709.07) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		end
+	end)
+	
+	Tab7Section:NewButton("Shotgun", "Gets the Shotgun for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Please Wait...";Icon = "";Duration = 7;})
+		local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		if game.Players.LocalPlayer.Team.Name == "Criminals" or game.Players.LocalPlayer.Team.Name == "Prisoners" then
+			local New_CFrame = CFrame.new(2152.48, 28.73, 424.08) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		else
+			local New_CFrame = CFrame.new(-1114.676, 67.27, -3041.15) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		end
+	end)
+	
+	Tab7Section:NewButton("Sniper", "Gets the Sniper for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Please Wait...";Icon = "";Duration = 7;})
+		local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		if game.Players.LocalPlayer.Team.Name == "Criminals" or game.Players.LocalPlayer.Team.Name == "Prisoners" then
+			local New_CFrame = CFrame.new(2152.36, 28.56, 382.49) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		else
+			local New_CFrame = CFrame.new(-1649.29, 43.78, 696.55) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		end
+	end)
+	
+	Tab7Section:NewButton("Pistol-S", "Gets the Pistol-S for you", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Please Wait...";Icon = "";Duration = 7;})
+		local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		if game.Players.LocalPlayer.Team.Name == "Criminals" or game.Players.LocalPlayer.Team.Name == "Prisoners" then
+			local New_CFrame = CFrame.new(-892.1, 68.8, -3073.21) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		else
+			local New_CFrame = CFrame.new(-892.1, 68.8, -3073.21) --The Cord where you want to go --game:GetService("Workspace").Ship.Boat.MARKPART.CFrame
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			wait(5.3)
+			keypress(0x45)
+			wait(0.1)
+			keyrelease(0x45)
+			Wait(0.45)
+			local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 AK47 x10", "Tab7s the AK47 x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['AK47']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['RifleScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Famas x10", "Tab7s the Famas x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Famas']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['RifleScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Shotgun x10", "Tab7s the Shotgun x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Shotgun']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['ShotgunScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 SPAS x10", "Tab7s the SPAS x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['SPAS']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['ShotgunScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+
+	Tab7Section:NewButton("Tab7 Pistol x10", "Tab7s the Pistol x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Pistol']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['PistolScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Pistol-S x10", "Tab7s the Pistol-S x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Pistol-S']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['PistolScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Deagle x10", "Tab7s the Deagle x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Deagle']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['PistolScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Sniper x10", "Tab7s the Sniper x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Sniper']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['RifleScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 MP5 x10", "Tab7s the MP5 x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['MP5']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['RifleScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+
+	Tab7Section:NewButton("Tab7 Baton x10", "Tab7s the Baton x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Baton']  --MP5,Pistol,Baton,Shotgun,Baton etc.
+		local ss = gun['MeeleScript'] --RifleScript,PistolScript,MeeleScript,ShotgunScript etc.
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Phantom x10", "Tab7s the SuperPower from Phantom x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Phantom']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Darkness x10", "Tab7s the SuperPower from Raven x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Darkness']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Ninja Star x10", "Tab7s the SuperPower from Rykou x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Ninja Star']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Laser Beam x10", "Tab7s the Laser Beam x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Laser Beam']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+
+	Tab7Section:NewButton("Tab7 Dark Energy x10", "Tab7s the Hero Power from Vanta x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Dark Energy']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Repulsor x10", "Tab7s the Hero Power from Titan x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Repulsor']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Frost x10", "Tab7s the Hero Power from Frostbite x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Frost']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Electricity x10", "Tab7s the Hero Power from Voltron x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Electricity']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Fire Ball x10", "Tab7s the Hero Power from Inferno x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Fire Ball']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+	Tab7Section:NewButton("Tab7 Bow & Arrow x10", "Tab7s the Hero Power from Archer x10", function()
+		local backpack = game.Players.LocalPlayer.Backpack
+		local gun = backpack['Bow & Arrow']  --Laser Beam,Dark Energy etc.
+		local ss = gun['PowerScript']
+		for i=1,10 do --u can change this to higher value if u want more damage
+		ss:Clone().Parent = gun
+		end
+	end)
+	
+
+	Tab7Section:NewButton("Infinite Ammo", "Not Working", function()
+		for _,v in next,game.Players.LocalPlayer.Backpack:GetDescendants() do
+            if v:FindFirstChild("PistolScript") or v:FindFirstChild("RifleScript") or v:FindFirstChild("ShotgunScript") or v:FindFirstChild("TazerScript") or v:FindFirstChild("GrenadeScript") or v:FindFirstChild("PowerScript") then
+                for _,b in next, v:GetDescendants() do 
+                    if b:IsA("LocalScript") then
+                        local env = getsenv(b)
+                        debug.setupvalue(env.Reload, "Ammo", math.huge)
+                        debug.setupvalue(env.Reload, "Clip", math.huge)
+                    end 
+                end
+            end
+        end
+	end)
+	
+	Tab7Section:NewButton("Vehicle GUI", "Opens a Vehicle GUI with Tab7ifiations", function()
+		_G.RedGUI = false
+		_G.Theme = "Dark"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyTab7z/discord.gg-rips/main/UniversalVehicleGUI.lua", true))()
+	end)
+	
+	Tab7Section:NewButton("Get Boss Key", "Gets the Boss Key", function()
+		game.Workspace.ObjectSelection.BossKey.Nope.BossKey.Event:FireServer()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Successfully got Boss Key.";Icon = "";Duration = 7;})
+
+	end)
+	
+	Tab7Section:NewButton("Get Key Card", "Gets the Key Card", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "If nothing happened, thats because no Keycard is dropped.";Icon = "";Duration = 7;})
+		game.Workspace.ObjectSelection.CopDropKeycard.CopDropKeycard.CopDropKeycard.Event:FireServer()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Successfully got Keycard.";Icon = "";Duration = 7;})
+
+	end)
+	
+	Tab7Section:NewButton("Get Jetpack", "Gets the Jetpack", function()
+		local oldpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Grabbing Jetpack...";Icon = "";Duration = 7;})
+		game.Workspace.ObjectSelection.BossKey.Nope.BossKey.Event:FireServer()
+		wait(0.1)
+		local New_CFrame = CFrame.new(-2260.64, 30.37, -1563.86) --The Cord where you want to go
+		local ts = game:GetService('TweenService')
+		local char = game.Players.LocalPlayer.Character
+		local part = char.HumanoidRootPart
+		local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+		local tp = {CFrame = New_CFrame}
+		ts:Create(part, ti, tp):Play()
+		wait(5.3)
+		keypress(0x45)
+		wait(0.2)
+		keyrelease(0x45)
+		wait(0.2)
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Done Grabbing Jetpack.";Icon = "";Duration = 7;})
+		local New_CFrame = CFrame.new(oldpos) --The Cord where you want to go
+		local ts = game:GetService('TweenService')
+		local char = game.Players.LocalPlayer.Character
+		local part = char.HumanoidRootPart
+		local ti = TweenInfo.new(5, Enum.EasingStyle.Linear) -- The 5 is how fast it is. The higher the slower
+		local tp = {CFrame = New_CFrame}
+		ts:Create(part, ti, tp):Play()
+	end)
+	
+	Tab7Section:NewButton("Walk through Doors", "Allows you to Walk through Doors", function()
+		for i,v in pairs(workspace:GetDescendants()) do
+			if v.Name == "Door" and v.ClassName == "Part" and v.CanCollide==true then
+				wait()
+				v.CanCollide = false
+			end
+		end
+	end)
+	
+	Tab7Section:NewButton("Anti Report", "Makes Players unable to report you", function()
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do 
+			if v:IsA("Accessory") or v:IsA("BillboardGui") or v:IsA("Decal") or v:IsA("Shirt") or v:IsA("Pants") then 
+				v:Destroy()
+			end
+		end
+	end)
+
+    Tab7Section:NewButton("Auto XP farm", "Executes the auto xp farm", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Executed!";Icon = "";Duration = 7;})
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/XP-FARM-1MIN.lua', true))()
+	end)
+
+	Tab7Section:NewButton("Kill all Criminals", "You need to be in a vehicle with missiles on it!", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "You have to be in a Vehicle that has Missiles on it!";Icon = "";Duration = 7;})
+		_G.TargetTeam = "Criminals" -- put team u need to kill here
+		while wait() do 
+			for i,v in next, game.Teams[_G.TargetTeam]:GetPlayers() do
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+			end
+		end
+	end)
+
+	Tab7Section:NewButton("Kill all Villains", "You need to be in a vehicle with missiles on it!", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "You have to be in a Vehicle that has Missiles on it!";Icon = "";Duration = 7;})
+		_G.TargetTeam = "Villains" -- put team u need to kill here
+		while wait() do 
+			for i,v in next, game.Teams[_G.TargetTeam]:GetPlayers() do
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+			end
+		end
+	end)
+
+	Tab7Section:NewButton("Kill all Cops", "You need to be in a vehicle with missiles on it!", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "You have to be in a Vehicle that has Missiles on it!";Icon = "";Duration = 7;})
+		_G.TargetTeam = "Police" -- put team u need to kill here
+		while wait() do 
+			for i,v in next, game.Teams[_G.TargetTeam]:GetPlayers() do
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+			end
+		end
+	end)
+
+	Tab7Section:NewButton("Kill all Heroes", "You need to be in a vehicle with missiles on it!", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "You have to be in a Vehicle that has Missiles on it!";Icon = "";Duration = 7;})
+		_G.TargetTeam = "Heroes" -- put team u need to kill here
+		while wait() do 
+			for i,v in next, game.Teams[_G.TargetTeam]:GetPlayers() do
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+				game.ReplicatedStorage.Event:FireServer("BM", v.Character.Head.Position)
+			end
+		end
+	end)
+
+	Tab7Section:NewButton("Unlock All Gamepasses", "Click to unlock all gamepasses!", function()
+		local g1 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g1.Name = "5275404"
+		g1.Value = true
+		local g2 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g2.Name = "5275406"
+		g2.Value = true
+		local g3 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g3.Name = "5275408"
+		g3.Value = true
+		local g4 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g4.Name = "5283883"
+		g4.Value = true
+		local g5 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g5.Name = "5285945"
+		g5.Value = true
+		local g6 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g6.Name = "5786950"
+		g6.Value = true
+		local g7 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g7.Name = "5945566"
+		g7.Value = true
+		local g8 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g8.Name = "5981868"
+		g8.Value = true
+		local g9 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g9.Name = "6023566"
+		g9.Value = true
+		local g10 = Instance.new("BoolValue",game.Players.LocalPlayer)
+		g10.Name = "6329988"
+		g10.Value = true
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "All Gamepasses Unlocked!";Icon = "";Duration = 5;})
+	end)
+
+	Tab7Section:NewButton("Unlock All Emotes", "Click to unlock all emotes!", function()
+		game.Players.LocalPlayer.Name = "nic10telf"
+		game.Players.LocalPlayer.Character.Head:Destroy()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Changed:connect(function ()
+		game.Players.LocalPlayer.Name = "nic10telf"
+		print(game.Players.LocalPlayer.Name)
+		end)
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "All Emotes Unlocked!";Icon = "";Duration = 5;})
+		end)
+
+
+	Tab7Section:NewButton("Server Hop", "Joins another server", function()
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Remember to execute the script again!";Icon = "";Duration = 7;})
+		wait(2)
+		local PlaceID = game.PlaceId
+		local AllIDs = {}
+		local foundAnything = ""
+		local actualHour = os.date("!*t").hour
+		local Deleted = false
+		local File = pcall(function()
+			AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+		end)
+		if not File then
+			table.insert(AllIDs, actualHour)
+			writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+		end
+		function TPReturner()
+			local Site;
+			if foundAnything == "" then
+				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+			else
+				Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+			end
+			local ID = ""
+			if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+				foundAnything = Site.nextPageCursor
+			end
+			local num = 0;
+			for i,v in pairs(Site.data) do
+				local Possible = true
+				ID = tostring(v.id)
+				if tonumber(v.maxPlayers) > tonumber(v.playing) then
+					for _,Existing in pairs(AllIDs) do
+						if num ~= 0 then
+							if ID == tostring(Existing) then
+								Possible = false
+							end
+						else
+							if tonumber(actualHour) ~= tonumber(Existing) then
+								local delFile = pcall(function()
+									delfile("NotSameServers.json")
+									AllIDs = {}
+									table.insert(AllIDs, actualHour)
+								end)
+							end
+						end
+						num = num + 1
+					end
+					if Possible == true then
+						table.insert(AllIDs, ID)
+						wait()
+						pcall(function()
+							writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+							wait()
+							game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+						end)
+						wait(4)
+					end
+				end
+			end
+		end
+
+		function Teleport()
+			while wait() do
+				pcall(function()
+					TPReturner()
+					if foundAnything ~= "" then
+						TPReturner()
+					end
+				end)
+			end
+		end
+
+		-- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
+		Teleport()
+	end)
+	
+	Tab7Section:NewButton("Tweak Position", "Dont use this unless you know what your doing!", function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Parent = nil
+		for i,v in pairs(getnilinstances()) do
+			if v.Name == "HumanoidRootPart" then
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Your Player Position Has been Tweaked. Reset to Fix.";Icon = "";Duration = 7;}) 
+	end)
+	
+	Tab7Section:NewTextBox("Spawn Vehicle", "Spawn any Vehicle", function(txt)
+		local args = {
+		[1] = "SpawnVehicle",
+		[2] = txt
+		}
+
+		game:GetService("ReplicatedStorage").Event:FireServer(unpack(args))
+
+		game.StarterGui:SetCore("SendNotification", {Title = "Asian Hub (MadCity)";Text = "Vehicle Spawned.";Icon = "";Duration = 7;}) 
+	end)
