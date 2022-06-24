@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "qasisstinky" then
+if player.Name == "vietnam_e" then
 print("Whitelisted")
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -16,7 +16,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Data Loaded", -- Required
-	Text = "Hello qasisstinky input your password",
+	Text = "Hello vietnam_e input your password",
 	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
 })
 local ScreenText = Instance.new("ScreenGui")
@@ -104,7 +104,7 @@ TextButton.TextWrapped = true
 
 
 TextButton.MouseButton1Click:connect(function()
-if TextBox.text == "qasisstinky908" then
+if TextBox.text == "vietnamwarwasnice" then
 Frame1.Visible = true
 Frame.Visible = false
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
