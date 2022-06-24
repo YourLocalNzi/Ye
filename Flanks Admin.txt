@@ -1,17 +1,114 @@
-wait(2)
+local player = game.Players.LocalPlayer
+
+if player.Name == "qasisstinky" then
+print("Whitelisted")
+else
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Loading BH V4", -- Required
-	Text = "By Red Coat#5495",
+	Title = "Not Whitelisted Bruh", -- Required
+	Text = "Buy this for 300 robux",
 	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
 })
-wait(1.7)
+end
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Loading BH Premium", -- Required
+	Text = "Buy this for 300 robux",
+	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
+})
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Data Loaded", -- Required
-	Text = "Hello fellow player",
+	Text = "Hello qasisstinky input your password",
 	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
 })
+local ScreenText = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Frame1 = Instance.new("Frame")
+local Title1 = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local Line = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextButton10 = Instance.new("TextButton")
+local TextButton11 = Instance.new("TextButton")
+local TextButton12 = Instance.new("TextButton")
+local Page1 = Instance.new("TextButton")
+local Page2 = Instance.new("TextButton")
+local Page3 = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local TextButton13 = Instance.new("TextButton")
+local TextButton14 = Instance.new("TextButton")
+local TextButton15 = Instance.new("TextButton")
+local TextButton16 = Instance.new("TextButton")
+local TextButton17 = Instance.new("TextButton")
+local TextButton18 = Instance.new("TextButton")
+local TextButton19 = Instance.new("TextButton")
+local TextButton20 = Instance.new("TextButton")
+local TextButton21 = Instance.new("TextButton")
+local TextButton22 = Instance.new("TextButton")
+local TextButton23 = Instance.new("TextButton")
+local TextButton24 = Instance.new("TextButton")
+local Frame3 = Instance.new("Frame")
+local TextButton25 = Instance.new("TextButton")
+local TextButton26 = Instance.new("TextButton")
+local TextButton27 = Instance.new("TextButton")
+local TextButton28 = Instance.new("TextButton")
+local TextButton29 = Instance.new("TextButton")
+local TextButton30 = Instance.new("TextButton")
+local TextButton31 = Instance.new("TextButton")
+local TextButton32 = Instance.new("TextButton")
+local TextButton33 = Instance.new("TextButton")
+local TextButton34 = Instance.new("TextButton")
+local TextButton35 = Instance.new("TextButton")
+local TextButton36 = Instance.new("TextButton")
+
+ScreenText.Parent = game.CoreGui
+
+Frame.Parent = ScreenText
+Frame.BackgroundColor3 = Color3.new(0,0,0)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.3,0,0.2)
+Frame.Size = UDim2.new(0.4,0.2,0.4)
+Frame.Active = true
+Frame.Draggable = true
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1,1,1)
+TextBox.BackgroundTransparency = 0
+TextBox.Position = UDim2.new(0.103524067, 0, 0.200333327, 0)
+TextBox.Size = UDim2.new(0.8,0,0.2)
+TextBox.Font = Enum.Font.SourceSansLight
+TextBox.FontSize = Enum.FontSize.Size14
+TextBox.Text = "Password"
+TextBox.TextScaled = true
+TextBox.TextSize = 8
+TextBox.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1,1,1)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.3,0,0.6)
+TextButton.Size = UDim2.new(0.4,0,0.2)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "Confirm"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+
+TextButton.MouseButton1Click:connect(function()
+if TextBox.text == "qasisstinky908" then
+Frame1.Visible = true
+Frame.Visible = false
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("BritishHub V4 By Red Coat#5495", "GrapeTheme")
+local Window = Library.CreateLib("BritishHub Premium By Red Coat#5495", "Serpent")
 --- Player
 --- Buttons
 local Tab = Window:NewTab("ThePlayer")
@@ -66,20 +163,30 @@ end)
 Section:NewButton("AutoToxic", "For the kids who don't have life", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JN-HH-Gaming-AutoToxic1/main/README.md",true))()
 end)
+Section:NewButton("Headless / Not FE", "Idk why would you need this", function()
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v:Destroy()
+end
+end
+end)
+Section:NewButton("Korblox / Not FE", "Idk why would you need this", function()
+local ply = game.Players.LocalPlayer
+        local chr = ply.Character
+        chr.RightLowerLeg.MeshId = "902942093"
+        chr.RightLowerLeg.Transparency = "1"
+        chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+        chr.RightFoot.MeshId = "902942089"
+        chr.RightFoot.Transparency = "1"
+end)
 Section:NewTextBox("Set Walkspeed","Rare kavo UI walkspeed setter", function(txt) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
 Section:NewTextBox("Set FOV","Max FOV number 120", function(txt) game.Workspace.CurrentCamera.FieldOfView = txt
 end)
 Section:NewTextBox("Set Jumppower","Increases JP", function(txt)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
-end)
-Section:NewTextBox("API executer","API Executer lololol", function(txt)
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Script Executed", -- Required
-	Text = "Yes",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-loadstring(txt)()
 end)
 local Section = Tab:NewSection("r15 animation changer")
 Section:NewButton("Custom Animation", "R15 Custom animation", function()
@@ -256,30 +363,6 @@ end)
 Tab1Section:NewButton("Jnhh hub v6", "yes", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JN-Bedwars-V6/6c8fd023d50e25f893ca34322458be32a0bac4c5/JN%20Bedwars%20V6"))()
 end)
-Tab1Section:NewButton("BH Cape", "Gives you our cape :}", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/CAPE"))()
-end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
 --- HSDL
 local Tab = Window:NewTab("High School dorm life")
 local Section = Tab:NewSection("HSDL")
@@ -299,13 +382,6 @@ end)
 Section:NewButton("Carpet", "Gives you a rideable carpet", function()
 game.ReplicatedStorage.GetItem:FireServer("RainbowMagicCarpet")
 end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
 --- Emergency kick
 local Tab = Window:NewTab("Kick yourself for no reason")
 local Section = Tab:NewSection("Kick")
@@ -324,8 +400,27 @@ Section:NewDropdown("Gun giver", "Gives guns", {"AK-47", "M4A1", "Remington 870"
         local Event = game:GetService("Workspace").Remote.ItemHandler
         Event:InvokeServer(A_1)
 end)
+Section:NewDropdown("Gun Mod", "Makes the gun op", {"M4A1", "Remington 870", "AK-47"}, function(v)
+        local module = nil
+        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
+            module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
+        elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
+            module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
+        end
+        if module ~= nil then
+            module["MaxAmmo"] = math.huge
+            module["CurrentAmmo"] = math.huge
+            module["StoredAmmo"] = math.huge
+            module["FireRate"] = 0.000001
+            module["Spread"] = 0
+            module["Range"] = math.huge
+            module["Bullets"] = 10
+            module["ReloadTime"] = 0.000001
+            module["AutoFire"] = true
+        end
+    end)
 --- fun
-local Tab = Window:NewTab("Other Hubs / Guis")
+local Tab = Window:NewTab("Fun Guis")
 local Section = Tab:NewSection("GUIS")
 Section:NewButton("Syntax hub Key SyntaxV3Free", "Gives you Syntax Hub", function()
 shared.colors = {
@@ -410,7 +505,7 @@ TextBox.Size = UDim2.new(0, 348, 0, 120)
 TextBox.Font = Enum.Font.SourceSans
 TextBox.TextSize = 18
 TextBox.TextWrapped = true
-TextBox.Text = 'infinite yield executed'
+TextBox.Text = 'Please use the new Infinite Yield loadstring. You can find it in the Discord.\n\ndiscord.io/infiniteyield\n\nYou will now be re-directed to the new loadstring.'
 TextBox.TextColor3 = Color3.new(1, 1, 1)
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
@@ -453,37 +548,13 @@ end)
 wait(5)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
-Section:NewButton("Firehood", "For DaHood", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Alt1lr123/FireHood/main/V3/Protected/DaHood/ArceusX/kittenMilk/Protected/README.md'))()
-end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
-Section:NewButton("Coming soon", "Gui is coming soon", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Coming soon!", -- Required
-	Text = "Why did you execute this smh",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
 local Section = Tab:NewSection("Bloodfest")
 Section:NewButton("Bloodfest GUI", "Gives you a game gui", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MyuKiH2q", true))()
 end)
 --- Chaos
 local Tab = Window:NewTab("Chaos")
-local Section = Tab:NewSection("Chaos")
+local Section = Tab:NewSection("Free Gamepass")
 Section:NewButton("Gamepasses", "Makes you own every gamepass not forever", function()
 game.Players.LocalPlayer.UserId = "2205774994"
 end)
@@ -530,26 +601,8 @@ Section:NewLabel("Imagine Changing this")
 Section:NewLabel("https://discord.gg/BK2bYMSvE9")
 Section:NewLabel("Is Gonna Be updated soon")
 local Section = Tab:NewSection("Update logs")
-Section:NewButton("Developers", "People who helped me", function()
-wait(1.5)
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "People", -- Required
-	Text = "alt1lr#9459 For the help of gui scripts.",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-wait(1.3)
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "People", -- Required
-	Text = " JN HH Gaming#1932 for showcasing.",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-wait(1.2)
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "People", -- Required
-	Text = "Nya_#1759 For helping me find scripts.",
-	Icon = "rbxthumb://type=Asset&id=9879986954&w=150&h=150" -- Optional
-})
-end)
 Section:NewButton("Update logs", "Update logs", function()
 print("Added Lx Hub, replaced the old fly gui with a better one, updated kick yrself, added inf yield.")
+end)
+end
 end)
