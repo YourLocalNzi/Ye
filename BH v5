@@ -152,7 +152,6 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 
 end)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/CAPE"))()
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("BritishHub V5 By Red Coat#5495", "Serpent")
 --- Player
